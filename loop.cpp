@@ -2,23 +2,82 @@
 using namespace std;
 int main()
 {
-   for (size_t i = 1; i <= 8; i++)
+   for (size_t i = 1; i <= 5; i++)
    {
-      for (size_t a = 8; a >= 1; a--)
+      for (size_t a = 4; a >= i; a--)
       {
-         if (a > i)
-            cout << " ";
-         if (a <= i)
+
+         cout << " ";
+      }
+      for (size_t d = 1; d <= i; d++)
+      {
+         cout << "*";
+      }
+
+      {
+         for (size_t a = 2; a <= i; a++)
+         {
+
             cout << "*";
+         }
+      }
+      cout << endl;
+   }
+
+   cout << endl;
+
+   for (size_t i = 1; i <= 5; i++)
+   {
+      for (size_t a = 5; a >= i; a--)
+      {
+
+         cout << "*";
       }
 
       cout << endl;
    }
 
-   int r=7 ,jj=8;
-   int e = 9;
-   if(r==7)
-   cout << (e*6%jj+6+989&&98*8-5*9/5&&8-8+8);
+   cout << endl;
+   for (size_t i = 1; i <= 5; i++)
+   {
+      for (size_t a = 1; a <= i; a++)
+      {
+
+         cout << "*";
+      }
+
+      cout << endl;
+   }
+
+   int m = 1;
+   for (size_t i = 1; i <= 5; i++)
+   {
+      for (size_t a = 4; a >= i; a--)
+      {
+         cout << " ";
+      }
+      for (size_t n = 1; n <= m; n++)
+      {
+         cout << "*";
+      }
+      cout << endl;
+      m += 2;
+   }
+int x =9;
+    for (size_t i = 1; i <= 5; i++)
+   {
+      for (size_t a = 2; a <= i; a++)
+      {
+         cout << " ";
+      }
+      for (size_t n = 1; n <= x; n++)
+      {
+         cout << "*";
+      }
+
+      x -= 2;
+      cout << endl;
+   }
 
    return 0;
 }
